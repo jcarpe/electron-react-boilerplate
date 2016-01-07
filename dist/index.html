@@ -1,0 +1,29 @@
+<html>
+
+<head>
+	<!--
+	Load compiled CSS for application. Easiest to simply compile down to a single file, 
+	however, styles can be included in modules from a modue bundler (webpack).
+	-->
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+
+<body>
+	
+<div id="main">
+</div>
+
+<script type="text/javascript">
+	/**
+	 * Determine if code is being run in a breowser environment and if so, do not allow. 
+	 * Otherwise require the desktop bootstrap file.
+	 */
+	if ( typeof require !== 'function' ) {
+		console.warn( 'Run as electron app plz. KTHXBAI.' );
+	} else {
+		require( './scripts/desktop.js' );
+	}
+</script>
+
+</body> 
+</html> 

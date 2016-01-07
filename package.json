@@ -1,0 +1,33 @@
+{
+  "name": "electron-react-boilerplate",
+  "version": "0.0.0",
+  "description": "A boilerplate project to get started with a react application wrapped in electron.",
+  "author": "Joe Carpenito",
+  "license": "ISC",
+  "scripts": {
+  	"test": "nightwatch",
+  	"run": "gulp run"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "flux": "^2.1.1",
+    "react": "^0.14.5",
+    "react-dom": "^0.14.5"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "electron-prebuilt": "^0.36.2",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-image-optimization": "^0.1.3",
+    "gulp-sass": "^2.1.0",
+    "nightwatch": "^0.8.15",
+    "require-dir": "^0.3.0"
+  }
+}
